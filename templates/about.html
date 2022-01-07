@@ -1,0 +1,30 @@
+<!DOCTYPEHTMl>
+<html>
+  <head>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+<style>
+  body {
+    background: rgba(69, 153, 225, 3)
+  }
+</style>
+  <title>
+  about
+</title>
+  </head>
+  <body>
+    <p>
+      Made by SmartCoder3000. Follow my </p>
+      <a href="https://www.instagram.com/eisthefuture/">  Instagram</a>
+    
+<script>
+window.onSpotifyWebPlaybackSDKReady = () => {
+  const userAccessToken = "ccbd9606e5fb46d0a23736adb46ba054";
+  const webPlayback = new Spotify.Player({
+    name: "Spotify Web Playback SDK",
+    getOAuthToken: callback => { callback(userAccessToken)}
+  });
+  webPlayback.connect();
+};
+</script>
+    </body>
+</html>
