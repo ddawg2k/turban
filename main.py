@@ -66,7 +66,7 @@ def unblok(token):
   dir = "templates/" + template
   page = requests.get(todo)
   data = page.text
-  #getlinks.fLinkGet(todo,'templates/link',cookie)
+  getlinks.fLinkGet(todo,'templates/link',cookie)
   for f in os.listdir('templates/link'):
     fi = 'templates/link/{}\n'.format(f)
     url_for('client',tkn=cookie)
