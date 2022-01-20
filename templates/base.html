@@ -51,15 +51,31 @@ h1 {
 
   font-family: 'Raleway', sans-serif;
 }
+li {
+  display: inline;
+}
+ul {
+  border: 1px solid #e7e7e7;
+  background-color: #969bb6;
+}
 
+li a {
+  color: #666;
+}
 </style>
 
   </head>
   
   <body>
-    <h1>You've ventured too far, come back!</h1>
-    <form>
-    <button formaction="/">Return To Home</button>
-    </form>
+        <div class="navBar">
+      <ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/games">Games</a></li>
+  <li style="float:right"><a class="active" href="/about">About</a></li>
+</ul>
+    </div>
+    <div class="grid-item">
+    <h1>Base</h1>
+    </div>
 
 </html>
